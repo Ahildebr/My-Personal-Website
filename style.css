@@ -1,3 +1,166 @@
+/* Global Styles */
 body {
-    background: blue;
-  }
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  font-family: 'Poppins', sans-serif; /* Modern and playful font */
+  background-color: white; /* Default background color */
+  color: black; /* Default text color */
+  line-height: 1.6; /* Improve readability */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  color: black; /* Ensure headings are bold and clear */
+}
+
+a {
+  text-decoration: none; /* Remove underline from links */
+  color: black; /* Default link color */
+}
+
+a:hover {
+  text-decoration: underline; /* Add underline on hover */
+  color: silver; /* Subtle color change for links */
+}
+
+/* Navigation Bar */
+nav {
+  background-color: black; /* Black navbar for contrast */
+  color: white; /* White text for readability */
+  padding: 10px 20px; /* Space around the content */
+}
+
+nav ul {
+  display: flex; /* Arrange navigation links in a row */
+  list-style: none; /* Remove bullet points */
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-right: 20px; /* Space between links */
+}
+
+nav ul li a {
+  color: white; /* White links in the navbar */
+  font-weight: bold; /* Make them stand out */
+}
+
+nav ul li a:hover {
+  color: silver; /* Hover effect for navigation links */
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, silver, black); /* Gradient background */
+  color: white; /* White text for contrast */
+  padding: 50px; /* Space around the content */
+  text-align: left; /* Left-aligned text */
+}
+
+.hero h1 {
+  font-size: 2.5rem; /* Large, eye-catching heading */
+}
+
+.hero p {
+  font-size: 1.2rem; /* Subheading for more detail */
+}
+
+/* Portfolio Section */
+#portfolio {
+  padding: 40px 20px; /* Space around the portfolio section */
+}
+
+.portfolio-grid {
+  display: grid; /* Use grid layout */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+  gap: 20px; /* Space between project cards */
+}
+
+.project {
+  background-color: white; /* White background for cards */
+  border: 1px solid silver; /* Subtle border */
+  padding: 20px; /* Space inside cards */
+  text-align: center; /* Center text inside cards */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effects */
+}
+
+.project:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+.project a {
+  color: black; /* Link color */
+  font-weight: bold; /* Make links stand out */
+}
+
+.project a:hover {
+  color: silver; /* Hover effect for links */
+}
+
+/* Blog Section */
+#blog {
+  background-color: silver; /* Distinct background */
+  padding: 40px 20px; /* Space around the blog section */
+}
+
+#blog ul {
+  list-style: none; /* Remove bullet points */
+  padding: 0;
+}
+
+#blog ul li {
+  margin-bottom: 20px; /* Space between blog posts */
+}
+
+#blog ul li a {
+  font-size: 1.2rem; /* Make blog titles prominent */
+  font-weight: bold; /* Emphasize blog titles */
+}
+
+#blog ul li a:hover {
+  color: black; /* Interactive hover effect */
+  text-decoration: underline; /* Add underline on hover */
+}
+
+#blog ul li p {
+  margin: 5px 0 0 0; /* Space below the excerpt */
+  font-size: 0.9rem; /* Smaller font for excerpts */
+  color: gray; /* Subtle text color for excerpts */
+}
+
+/* About Section */
+#about {
+  padding: 40px 20px; /* Space around the about section */
+  text-align: center; /* Centered content */
+}
+
+#about p {
+  max-width: 600px; /* Limit paragraph width for readability */
+  margin: auto; /* Center the text */
+}
+
+/* Contact Section */
+#contact {
+  padding: 40px 20px; /* Space around the contact section */
+  text-align: center; /* Center contact details */
+}
+
+#contact a {
+  color: black; /* Default link color */
+  font-weight: bold; /* Make contact links stand out */
+}
+
+#contact a:hover {
+  color: silver; /* Hover effect for contact links */
+}
+
+/* Footer */
+footer {
+  background-color: black; /* Dark footer */
+  color: white; /* White text */
+  text-align: center; /* Center the text */
+  padding: 10px 0; /* Space inside footer */
+  font-size: 0.9rem; /* Smaller font size */
+}
